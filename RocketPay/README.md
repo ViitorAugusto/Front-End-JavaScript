@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://rocket-pay-jade.vercel.app/"> 💻 Projeto</a></h1>
+<h1 align="center"><a href="https://rocketpay-beta-puce.vercel.app/"> 💻 Projeto</a></h1>
 
 <p align="center">
 Evento exclusivo , promovido pela Rocketseat para ensino de tecnologias WEB.
@@ -44,5 +44,4 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 Esse projeto está sob a licença MIT.
 
 ---
-
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Feito por Vitor Augusto [Me sigua no Linkedlin](https://www.linkedin.com/in/viitoraugusto/)
