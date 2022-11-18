@@ -1,0 +1,177 @@
+:root {
+
+    --secondary-color: #f7f4f6;
+    --tertiary-color: #eeeeee;
+    --gap: 3rem;
+    --cor-beta: #000022 ;
+    --cor-1-azul: #0a1128 ;
+    --cor-2-branco: #f7f4f6;
+    --cor-3-azulclaro: #0b5071;
+    --cor-4-cinza: #c5c1c3;
+    --cor-5-verm: #f14c65;
+}
+
+
+ .intro-skills {
+    display: flex;
+
+ }
+.container2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+
+    width: 100%;
+
+
+}
+
+.container2 .card2 {
+    position:relative;
+    width: 220px;
+    height: 250px;
+    background-color: var(--cor-2-branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px var(--cor-1-azul);
+    cursor: pointer;
+}
+.container2 .card2 .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.container2 .card2 .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+.container2 .card2 .percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 3;
+    stroke: var(--cor-4-cinza);
+    transform: translate(5px, 5px);
+}
+ .container2 .card2 .percent svg  circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440px;
+    stroke-dashoffset: calc(440 - (440 * var(--num))/100);
+    opacity: 0;
+    animation: fadeIn 2s linear forwards;
+    animation-delay: 0.8s;
+} 
+
+   @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}  
+
+.dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    animation: animateDot 1s linear forwards;
+
+}
+
+.dot::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--clr);
+    box-shadow: var(--clr),
+    0 0 30px var(--clr);
+}
+  @keyframes animateDot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+} 
+.number {
+    position:absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 2s linear forwards;
+    animation-delay: 1.2s;
+}
+
+.boardskills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-beta);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+span {
+    text-indent: 5px;
+    color: var(--clr);
+}
+
+.card2:hover {
+    transition: all .9s ease-in-out;
+    scale: 1.1;
+  
+  
+}
+.divskills {
+    border: 1px solid rebeccapurple;
+    
+}
+.gallery {
+    color: var(--cor-1-azul);
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+#html1:hover {
+    box-shadow: 0.1rem 0.1rem 0.9rem #d54e1b;
+}
+#css:hover {
+    box-shadow: 0.1rem 0.1rem 0.9rem #0c75c1;
+}
+#java:hover {
+    box-shadow: 0.1rem 0.1rem 0.4rem #e8d44c;
+}
+#node:hover {
+    box-shadow: 0.1rem 0.1rem 0.9rem #8bbf3d;
+}
+#type:hover {
+    box-shadow: 0.1rem 0.1rem 0.9rem #082e5e;
+}
+#sql:hover {
+    box-shadow: 0.1rem 0.1rem 0.9rem #d68a38;
+}
+#maria:hover {
+    box-shadow: 0.1rem 0.1rem 0.9rem #ba7257;
+}
+#react:hover {
+    box-shadow: 0.1rem 0.1rem 0.9rem #00d9f7;
+}
+

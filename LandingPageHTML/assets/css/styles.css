@@ -1,0 +1,561 @@
+:root {
+
+    --secondary-color: #f7f4f6;
+    --tertiary-color: #eeeeee;
+    --gap: 3rem;
+    --cor-beta: #000022 ;
+    --cor-1-azul: #0a1128 ;
+    --cor-2-branco: #f7f4f6;
+    --cor-3-azulclaro: #0b5071;
+    --cor-4-cinza: #c5c1c3;
+    --cor-5-verm: #f14c65;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/*-------------------------------*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+
+h1, h2 ,h3 ,h4 ,h5 ,h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 6.5rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 5.5rem;
+    color: var(--cor-2-branco);
+
+}
+h3 {
+    font-size: 5.0rem;
+}
+h4 {
+    font-size: 4.5rem;
+    color: var(--cor-5-verm);
+}
+h5 {
+    font-size: 4.0rem;
+    color: var(--cor-5-verm);
+}
+h6 {
+    font-size: 3.5rem;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin-bottom: 3.5rem;
+    text-align: center;
+
+}
+.main-bg {
+    background-image:linear-gradient(to right, var(--cor-1-azul), var(--cor-beta));
+     /* background-image: url('../img/main.svg.svg');  */
+    background-size: cover;
+    background-position: center center;
+    color: var(--cor-4-cinza);
+}
+.white-bg {
+    background-color: var(--cor-2-branco);
+    color: var(--cor-1-azul);
+}
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap)
+
+}
+.section {
+    min-height: 100vh;
+}
+.menu-spacing {
+    height: 100px;
+}
+
+/*----------------- Nav ---------------------*/
+.menu {
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.01rem solid var(--secondary-color);
+}
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 0;
+
+}
+.menu h1 a {
+    color: var(--primary-color)
+
+}
+.menu h1 {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    padding-left: 1.5rem;
+    font-weight: 900;
+
+}
+
+.menu h1 a:hover {
+   filter: drop-shadow(0rem 0rem 0.1rem var(--cor-3-azulclaro));
+} 
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+.menu ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--cor-1-azul);
+    position: relative;
+}
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--cor-5-verm);
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+.close-menu {
+   display: none;
+}
+
+/*----------------- Fim Nav ---------------------*/
+
+
+/*-----------------  Section 1 ------------------------*/
+.intro-content {
+    position: relative;
+    /* top: -8rem; */
+    display: grid;
+    grid-template-columns: 1.4fr 1.1fr;
+    grid-gap: var(--gap);
+    min-height: 100vh;
+}
+.intro-text-content ,.intro-img  {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.intro-text-content h5 {
+    margin-bottom: 2rem;
+}
+article a img {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1rem;  
+   
+ }
+#redenav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+ 
+}
+#redenav a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2.5rem;
+    border: 0.2rem solid var(--cor-2-branco);
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    color: var(--cor-2-branco);
+    transition: .5s;
+    width: 18rem;
+    height: 7rem;
+    
+}
+.blur {
+    filter: drop-shadow(0.1rem 0.1rem 0.4rem var(--cor-2-branco));
+}
+#redenav a:hover {
+    animation-name: btn2;
+	animation-delay: .4s;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+   
+	color:var(--cor-2-branco);
+	box-shadow: 0.1rem 0.1rem 2rem var(--cor-3-azulclaro)
+}
+@keyframes btn2 {
+	0% {
+		transform:rotate(0);
+	}
+	25% {
+		transform:rotate(10deg);
+	}
+	50% {
+		transform:rotate(0);
+	}
+	75% {
+		transform:rotate(-10deg);
+	}
+	100% {
+		transform:rotate(0);
+	}
+}
+
+
+/*----------------- Fim Section 1 ---------------------*/
+
+
+/*----------------- Section 2  -------------------------*/
+.intro-content2 h2 {
+    text-align: center;
+    font-size: 8.0rem;
+
+    border-bottom: 0.3rem solid var(--cor-5-verm);
+    margin-bottom: 5rem;
+    line-height: 1.2;
+    color: var(--cor-1-azul);
+    cursor: pointer;
+}
+
+.intro-content2 {
+    max-width: 64rem;
+    display: flex;
+    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.intro-content2 a {
+    border-radius: 3rem;
+    color: var(--cor-5-verm);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--cor-2-branco);
+    border: 0.1rem solid var(--cor-1-azul);
+    padding: 1rem;
+    box-shadow: 0.01rem 0.02rem 0.3rem var(--cor-1-azul);
+
+
+}
+
+.intro-content2 a:hover {
+    background-color: var(--cor-1-azul);
+    color: var(--cor-2-branco);
+    letter-spacing: 0.2rem;
+    box-shadow: 0.1rem 0.1rem 2rem var(--cor-3-azulclaro)
+}
+
+/*----------------- Fim Section 2 ---------------------*/
+
+/*----------------- Section 3 -------------------------*/
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+.grid-one-content h2 {
+    font-size: 8.0rem;
+    text-transform: uppercase;
+
+    line-height: 1.2;
+}
+
+.grid-description {
+    padding-bottom: 6rem;
+    text-align: start;
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--gap);
+    counter-reset: grid-counter;
+}
+.grid h3 {
+
+    font-size: 3rem;
+    position: relative;
+    padding-left: 7rem;
+    padding-bottom: 2rem;
+
+}
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8.0rem;
+    font-style: italic;
+    top: -5rem;
+    left: 2rem;
+    transform: rotate(5deg);
+
+}
+.grid p {
+    background-color: var(--cor-5-verm);
+    margin-top: 3rem;
+    width: 41rem;
+    font-size: 3rem;
+    padding: 2rem;
+    transform:rotate(-50deg)  ;
+}
+.grid article {
+    /* border: 1px solid var(--cor-2-branco); */
+    padding: 4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 0 2rem var(--cor-3-azulclaro);
+}
+.grid article:hover {
+    transform: scale(1.1);
+    letter-spacing: 0.5rem;
+}
+
+
+
+/*----------------- Fim Section 3 -------------------------*/
+
+/*-----------------  Section 4 -------------------------*/
+/* .card-front img {
+    max-width: 40%;
+    min-height: 25%;
+}
+.container {
+    gap: var(--gap);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    max-width: 100%;
+}
+
+.card-container{
+    width : 25%;
+    height: 25%;
+    position: relative;
+    box-shadow: 1px 1px 10px var(--cor-1-azul);
+    margin: .5rem;
+    border-radius: 10px;
+}
+.face{
+    width: 100%;
+    height: 100%;
+    perspective: 700px;
+}
+.card-front, .card-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transition: 700ms;
+    display: flex;
+    color: var(--cor-4-cinza);
+
+}
+.card-front{
+    background-color: var(--cor-2-branco);
+    font-size: 5em;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+}
+.card-back {
+    background-color: var(--cor-1-azul);
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    flex-direction: column;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+.card-back h2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0.9rem;
+
+}
+.card-back p {
+
+    text-align: center;
+    margin-bottom: 0.9rem;
+}
+.face:hover .card-front {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+.face:hover .card-back {
+    transform: rotateY(0deg);
+    z-index: 0;
+} */
+
+
+
+
+/*-----------------  Fim Section 4 -------------------------*/
+
+/*-----------------  Section 5 -------------------------*/
+
+/*----------------- Fim Section 5 -----------------------*/
+
+/*----------------- Footer -----------------------*/
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer p {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+.footer a {
+    color: var(--cor-1-azul);
+}
+.back-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--secondary-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--cor-1-azul);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--cor-1-azul);
+
+}
+.footer div {
+    width: 30rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 4rem;
+
+
+}
+.footer img:hover{
+    transform: scale(1.3);
+
+
+}
+.footer img {
+    width: 4rem;
+    height: 4rem;
+    transition: all 400ms ease-in-out;
+
+}
+.footer h2 {
+    padding-top: 4rem;
+    font-size: 1.8rem;
+    color: var(--cor-1-azul);
+    border-top: 0.1rem solid var(--cor-4-cinza);
+}
+.footer h3 {
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    color: var(--cor-1-azul);
+}
+.fotoperfil {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    margin-left: 30rem;
+}
+/*----------------- Fim Footer -----------------------*/
+
+/*----------------- @Media  -----------------------*/
+
+/*----------------- Fim @Media -----------------------*/
+
+
+/*----------------- Maquina -----------------------*/
+.titulo-principal{
+
+    text-align: start;
+    color: #fff;
+
+}
+.titulo-principal:after{
+ content: '.';
+ margin-left: 5px;
+ opacity: 1;
+ animation: pisca .8s normal;
+}
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+
+    }
+    50%{
+        opacity: 0;
+
+    }
+}
+
+/*----------------- Maquina -----------------------*/
+
+/*----------------- 3d -----------------------*/
+[data-anime] {
+    opacity: 1;
+    transition: .6s;
+}
+[data-anime="top"] {
+    transform: translate3d(0, -70%, 0);
+ }
+ [data-anime="bottom"] {
+     transform: translate3d(0, 70%, 0);
+  }
+[data-anime="left"] {
+   transform: translate3d(-20%, 0, 0);
+}
+[data-anime="right"] {
+    transform: translate3d(20%, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+/*----------------- Fim 3d -----------------------*/

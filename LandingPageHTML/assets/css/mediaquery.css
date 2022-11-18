@@ -1,0 +1,122 @@
+@media(max-width:1045px){
+    .intro-content {
+        display: flex;
+    }
+}
+
+@media (max-width: 800px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+    .intro-content2 {
+        grid-template-columns: 1fr;
+    }
+    .grid-one-content {
+        display: block;
+        height: 100%;
+  
+    }
+    .grid-description{
+        padding: 0;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro-text-content h2 {
+        font-size: 7rem;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+   }
+   .gallery {
+    font-size: 6rem;
+   }
+.grid-one-content h2 {
+    font-size: 5rem;
+   }
+   .card-container {
+    width: 100%;
+    height: 120%;
+    margin: 0 auto;
+   }
+}
+
+ @media (max-width: 500px) {
+    #redenav {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 0;
+        
+    }
+
+    .container2{
+        gap: 30px;
+
+    }
+   
+    
+    .intro-text-content h5{
+        font-size: 3rem;
+        padding-bottom: 6rem;
+    }
+
+    .intro-content2 h2 {
+        margin-bottom: 1rem;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+    /* ,aqui */
+    .menu-content.menu-content ul {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+    .menu-content {
+        height: 100vh;
+    }
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: var(--primary-color);
+        color: var(--cor-5-verm);
+        font-size: 4rem;
+        line-height: 4rem;
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '×';
+    }
+    .menu-spacing {
+        display: none;
+    }
+
+}
+
+
