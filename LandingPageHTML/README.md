@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://vercel.com/viitoraugusto/landingpagehtml"> 💻 Projeto Landing Page</a></h1>
+<h1 align="center"><a href="https://landingpagehtml-beta.vercel.app/"> 💻 Projeto Landing Page</a></h1>
 
 <p align="center">
 Minha primeira Landing Page, feito com HTML e CSS e JavaScript.
@@ -40,4 +40,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito por Vitor Augusto [Me sigua no Linkedlin](https://www.linkedin.com/in/viitoraugusto/)
+Feito por Vitor Augusto [Meu Linkedlin](https://www.linkedin.com/in/viitoraugusto/)

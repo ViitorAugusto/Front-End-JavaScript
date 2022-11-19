@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://vercel.com/viitoraugusto/landingpagehtml"> 💻 Projeto Page</a></h1>
+<h1 align="center"><a href="#"> 💻 Projeto Page</a></h1>
 
 <p align="center">
 Minha primeira Page, meu primeiro projeto desenvolvido, como um objetivo de ser um currículo, mostra o quão eu evoluo vendo esse projeto.
@@ -34,4 +34,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 
 
-Feito por Vitor Augusto [Me sigua no Linkedlin](https://www.linkedin.com/in/viitoraugusto/)
+Feito por Vitor Augusto [Meu Linkedlin](https://www.linkedin.com/in/viitoraugusto/)
