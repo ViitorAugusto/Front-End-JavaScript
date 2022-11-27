@@ -1,5 +1,11 @@
-const pom = document.querySelector('.tecla_pom');
+function tocaSom( idAudio ) {
 
+  document.querySelector(idAudio).play();
+ 
+}
 
-pom.
-    
+const listaTeclas = document.querySelectorAll(`.tecla`)
+
+for (let i = 0; i < listaTeclas.length; i++) {
+  listaTeclas[i].addEventListener(`click`, tocaSom)
+}
