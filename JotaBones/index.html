@@ -5,6 +5,10 @@
     <title>Jota Bones</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/media.css" />
@@ -23,8 +27,6 @@
                     <li class="active"><a href="#home">Home</a></li>
                     <li><a href="#Galeria">Produtos</a></li>
                     <li><a href="#Preços">Preços</a></li>
-                    <!-- <li><a href="">Happy Clients</a></li> -->
-                    <!-- <li><a href="">Some Facts</a></li>  -->
                     <li><a href="#Serviços">Serviços</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#Contatos">Contatos</a></li>
@@ -37,29 +39,19 @@
     <!-- Banner -->
     <main>
    
-        <section class="banner" id="home">
-        <div class="sliders" style="margin-left:0;">
-            <div class="slide">
-                <div class="slidearea">
-                    
-                </div>
-            </div><div class="slide">
-                <div class="slidearea">
-                   
-                </div>
-            </div><div class="slide">
-                <div class="slidearea">
-                   
-                </div>
+        <div class="glider-contain" id="home">
+            <div class="glider">
+                <div><img class="banner-item" src="banner/1.webp" alt=""></div>
+                <div><img class="banner-item" src="banner/2.webp" alt=""></div>
+              <div><img  class="banner-item" src="banner/3.webp" alt=""></div>
+              <div><img class="banner-item" src="banner/4.jpg" alt=""></div>
             </div>
-        </div>
-        <div class="sliders-pointers">
-            <div class="pointer active"></div>
-            <div class="pointer"></div>
-            <div class="pointer"></div>
-        </div>
-        </section>
-
+          
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        
     <section class="default light" id="Galeria">
         <div class="section-title">Produtos</div>
         <div class="section-desc">Nossos Produtos</div>
@@ -336,13 +328,13 @@
         <div class="section-desc">Loja virtual localizada em São Paulo, São Roque</div>
         <div class="section-body">
             <div class="section-contact">
-                <form  method="#">
+                <form  method="POST" action="https://formsubmit.co/juliano.jrc@hotmail.com">
                     <div class="section-contact--split">
-                        <input type="text" name="name" placeholder="NOME" />
-                        <input type="text" name="name" placeholder="EMAIL" />
+                        <input type="text" name="name" placeholder="NOME" required />
+                        <input type="text" name="name" placeholder="EMAIL" required />
                     </div>
                     
-                    <textarea name="message" placeholder="MESSAGE"></textarea>
+                    <textarea name="message" placeholder="MESSAGE" required></textarea>
                     <input type="submit" value="Enviar mensagem" class="button" />
                 </form>
             </div>
@@ -371,5 +363,8 @@
     </div>
 </footer>
 <script src="assets/js/script.js"></script>
+<div onclick="toTop()" class="scrollbutoon"><span>»</span></div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script src="assets/js/glider.js"></script>
 </html>

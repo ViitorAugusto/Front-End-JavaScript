@@ -9,3 +9,20 @@ hamburger.addEventListener('click', () => {
     }
 });
 
+function toTop() {
+    window.scrollTo(0, 0);
+}
+
+function disappearButton () {
+    if (window.scrollY === 0) {
+        document.querySelector('.scrollbutoon').style.display = 'none';
+    } else {
+        document.querySelector('.scrollbutoon').style.display = 'block';
+    }
+}
+
+window.addEventListener('scroll', disappearButton);
+    
+
+
+
